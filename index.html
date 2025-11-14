@@ -10,10 +10,17 @@
 
 <body>
     <header class="header">
-        <header class="container">
-            <header class="header__container">
-                <a class="logo__link" href="#"><img class="header__img" src="./assests/images/tiftlogo.png" alt=""></a>
-                <ul class="header__list">
+        <div class="container">
+            <div class="header__container">
+                <a class="logo__link" href="#">
+                    <img class="header__img" src="./assests/images/tiftlogo.png" alt="">
+                </a>
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="header__list" id="nav-menu">
                     <li class="header__item">
                         <a class="header__link" href="#" data-i18n="nav_conf">Konferensiyalar</a>
                     </li>
@@ -31,9 +38,43 @@
                     <button class="lang-btn active" data-lang="uz">UZ</button>
                     <button class="lang-btn" data-lang="ru">RU</button>
                 </div>
-            </header>
-        </header>
+
+            </div>
+        </div>
     </header>
+
+    <!-- ------------------------------------sidebar---------------------------- -->
+    <div class="sidebar">
+        <div class="sidebar__section">
+            <h3 class="sidebar__title" data-i18n="sidebar_journal">JURNAL</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a class="sidebar__link" href="#" data-i18n="sidebar_news">Jurnal yangiliklari</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#" data-i18n="sidebar_information">Jurnal haqida</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#" data-i18n="sidebar_archive">Arxiv</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#" data-i18n="sidebar_statistics">Statistika</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar__section">
+            <h3 class="sidebar__title" data-i18n="sidebar_AUTHORS">MUALLIFLARGA</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a class="sidebar__link" href="#" data-i18n="sidebar_requirements">Maqola tayyorlash bo‘yicha talablar</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#" data-i18n="sidebar_documents">Namunaviy hujjatlar</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#" data-i18n="sidebar_copyright">Mualliflik huquqi</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar__section">
+            <h3 class="sidebar__title" data-i18n="sidebar_EDITORIAL">TAHRIRIYAT</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a class="sidebar__link" href="#" data-i18n="sidebar_staff">Tahririyat a’zolari</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ---------------------backenddan ma'lumotlar keladigan joyi------------------- -->
+    <main style="margin-left: 250px;">
+        <!-- bu joy backenddan keladigan ma’lumotlar uchun -->
+    </main>
     <script src="./js/main.js"></script>
 </body>
 
